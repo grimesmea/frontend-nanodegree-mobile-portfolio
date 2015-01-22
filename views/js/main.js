@@ -378,7 +378,7 @@ var pizzaElementGenerator = function(i) {
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.classList.add("col-md-6");
 
-  pizzaImage.src = "images/pizza-optimized.png";
+  pizzaImage.src = "images/pizza.webp";
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
@@ -452,6 +452,7 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     var dx = determineDx(document.querySelector(".randomPizzaContainer"), size);
     var pizzaWidth = document.querySelector(".randomPizzaContainer").offsetWidth;
+
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       document.querySelectorAll(".randomPizzaContainer")[i].style.width = (pizzaWidth + dx) + 'px';
     }
@@ -549,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < 32; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
-    elem.src = "images/pizza-optimized.png";
+    elem.src = "images/pizza.webp";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
