@@ -498,7 +498,8 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 var lastKnownScrollY = 0,
-    ticking = false;
+    ticking = false,
+    items;
 
 // Checks for a scroll event.
 function onScroll() {
@@ -519,8 +520,7 @@ function updatePositions() {
   ticking = false;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover'),
-      currentScrollY = lastKnownScrollY;
+  var currentScrollY = lastKnownScrollY;
 
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((currentScrollY / 1250) + (i % 5));
@@ -557,5 +557,6 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     movingPizzas.appendChild(elem);
   }
+  items = document.querySelectorAll('.mover');
   updatePositions();
 });
