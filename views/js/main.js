@@ -521,7 +521,6 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover'),
       currentScrollY = lastKnownScrollY;
-      //console.log(currentScrollY, document.body.scrollTop);
 
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((currentScrollY / 1250) + (i % 5));
