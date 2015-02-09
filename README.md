@@ -1,65 +1,39 @@
-## Website Performance Optimization portfolio project
+## Cameron's Optimized Portfolio
+The optimized portfolio can be accessed at http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/.
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+Most optimizations to this project were achieved using Gulp (http://gulpjs.com/) in addition to asynchronously running JavaScript when possible to do so.
 
-To get started, check out the repository, inspect the code,
+Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/views/pizza page are explained within the comments of main.js.
 
-### Getting started
+Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio.
 
-Some useful tips to help you get started:
+This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:
+1. Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)
+2. Install dependencies using npm install - dependencies needed can be seen in
+the package.json file.
+3. Run default gulp task
+4. Optimized project files are now available in the /dist folder
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+### Resources and Acknowledgements
+http://www.html5rocks.com/en/tutorials/speed/scrolling/
+http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
+http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
+http://blog.patrickmeenan.com/2013/06/progressive-jpegs-ftw.html
+http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+http://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/
+http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode
+http://wesleyhales.com/blog/2013/10/26/Jank-Busting-Apples-Home-Page/
+http://www.html5rocks.com/en/tutorials/speed/rendering/
+http://michaelwales.com/articles/getting-started-with-gulpjs/
+https://docs.google.com/presentation/d/1CH8ifryioHDLT1Oryyy8amusUmq2FytpCPCpk0G3E4o/edit?pli=1#slide=id.g174d07756_10
+http://davidwalsh.name/translate3d
+https://developers.google.com/speed/webp/?csw=1
+http://www.html5rocks.com/en/tutorials/speed/animations/
+http://markgoodyear.com/2014/01/getting-started-with-gulp/
+http://css-tricks.com/authoring-critical-fold-css/
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
-
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
-
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ngrok 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
-
-### Optimization Tips and Tricks
-* [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
-* [Analyzing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html "analyzing crp")
-* [Optimizing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path.html "optimize the crp!")
-* [Avoiding Rendering Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css.html "render blocking css")
-* [Optimizing JavaScript](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript.html "javascript")
-* [Measuring with Navigation Timing](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html "nav timing api"). We didn't cover the Navigation Timing API in the first two lessons but it's an incredibly useful tool for automated page profiling. I highly recommend reading.
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads.html">The fewer the downloads, the better</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer.html">Reduce the size of text</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html">Optimize images</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html">HTTP caching</a>
-
-### Customization with Bootstrap
-The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in `dist/css/portfolio.css` in the portfolio repo.
-
-* <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
-* <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
-
-### Sample Portfolios
-
-Feeling uninspired by the portfolio? Here's a list of cool portfolios I found after a few minutes of Googling.
-
-* <a href="http://www.reddit.com/r/webdev/comments/280qkr/would_anybody_like_to_post_their_portfolio_site/">A great discussion about portfolios on reddit</a>
-* <a href="http://ianlunn.co.uk/">http://ianlunn.co.uk/</a>
-* <a href="http://www.adhamdannaway.com/portfolio">http://www.adhamdannaway.com/portfolio</a>
-* <a href="http://www.timboelaars.nl/">http://www.timboelaars.nl/</a>
-* <a href="http://futoryan.prosite.com/">http://futoryan.prosite.com/</a>
-* <a href="http://playonpixels.prosite.com/21591/projects">http://playonpixels.prosite.com/21591/projects</a>
-* <a href="http://colintrenter.prosite.com/">http://colintrenter.prosite.com/</a>
-* <a href="http://calebmorris.prosite.com/">http://calebmorris.prosite.com/</a>
-* <a href="http://www.cullywright.com/">http://www.cullywright.com/</a>
-* <a href="http://yourjustlucky.com/">http://yourjustlucky.com/</a>
-* <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
-* <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
-* <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
+A big thanks to a number of other students who were invaluable resources in HipChat as well as their github repositories they shared for inspiration:
+https://github.com/abustamam/mobile-portfolio
+https://github.com/kevdonk/frontend-nanodegree-mobile-portfolio/
+https://github.com/jvojens2/frontend-nanodegree-mobile-portfolio
