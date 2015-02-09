@@ -1,11 +1,11 @@
 ## Cameron's Optimized Portfolio
-The optimized portfolio can be accessed at http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/.
+The optimized portfolio can be accessed at http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/.
 
 Most optimizations to this project were achieved using Gulp (http://gulpjs.com/) in addition to asynchronously running JavaScript when possible to do so.
 
-Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/views/pizza page are explained within the comments of main.js.
+Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/views/pizza/ page are explained within the comments of main.js.
 
-Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio.
+Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/.
 
 This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:
 1. Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)
@@ -35,5 +35,5 @@ http://css-tricks.com/authoring-critical-fold-css/
 
 A big thanks to a number of other students who were invaluable resources in HipChat as well as their github repositories they shared for inspiration:
 https://github.com/abustamam/mobile-portfolio
-https://github.com/kevdonk/frontend-nanodegree-mobile-portfolio/
+https://github.com/kevdonk/frontend-nanodegree-mobile-portfolio
 https://github.com/jvojens2/frontend-nanodegree-mobile-portfolio
