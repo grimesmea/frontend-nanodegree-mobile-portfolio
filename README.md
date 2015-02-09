@@ -5,12 +5,12 @@ Most optimizations to this project were achieved using Gulp (http://gulpjs.com/)
 
 Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/views/pizza/ page are explained within the comments of main.js.
 
-Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/.This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:
-1) Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)
+Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/.This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:  
+1) Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)  
 2) Install dependencies using npm install - dependencies needed can be seen in
-the package.json file.
-3) Run default gulp task
-4) Optimized project files are now available in the /dist folder
+the package.json file.  
+3) Run default gulp task  
+4) Optimized project files are now available in the /dist folder  
 
 ### Resources and Acknowledgements
 http://www.html5rocks.com/en/tutorials/speed/scrolling/  
@@ -31,7 +31,7 @@ http://www.html5rocks.com/en/tutorials/speed/animations/
 http://markgoodyear.com/2014/01/getting-started-with-gulp/  
 http://css-tricks.com/authoring-critical-fold-css/  
 
-A big thanks to a number of other students who were invaluable resources in HipChat as well as their github repositories they shared for inspiration:
+A big thanks to a number of other students who were invaluable resources in HipChat as well as their github repositories they shared for inspiration:  
 https://github.com/abustamam/mobile-portfolio  
 https://github.com/kevdonk/frontend-nanodegree-mobile-portfolio  
 https://github.com/jvojens2/frontend-nanodegree-mobile-portfolio  
