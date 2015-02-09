@@ -3,7 +3,7 @@ The optimized portfolio can be accessed at http://grimesmea.github.io/frontend-n
 
 Most optimizations to this project were achieved using Gulp (http://gulpjs.com/) in addition to asynchronously running JavaScript when applicable.
 
-Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/views/pizza/ page are explained within the comments of main.js.
+Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/views/pizza page are explained within the comments of main.js.
 
 Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/.This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:  
 1) Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)  
