@@ -450,6 +450,9 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
+    // Both the var dx and pizzaWidth have been relocated from inside the for
+    // loop for improved efficiency and the newWidth variable has been removed
+    // as it is not neccessary.
     var dx = determineDx(document.querySelector(".randomPizzaContainer"), size);
     var pizzaWidth = document.querySelector(".randomPizzaContainer").offsetWidth;
 
@@ -469,9 +472,11 @@ var resizePizzas = function(size) {
 
 window.performance.mark("mark_start_generating"); // collect timing data
 
+// Relocated from inside for loop below.
+var pizzasDiv = document.getElementById("randomPizzas");
+
 // This for-loop actually creates and appends all of the pizzas when the page loads
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -497,10 +502,13 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
+// It has been modified to work with requestAnimationFrame() as seen at
+// http://www.html5rocks.com/en/tutorials/speed/animations to improve FPS when
+// scrolling.
 
 var lastKnownScrollY = 0,
     ticking = false,
-    items;
+    items; // Variable declaration has been moved outside updatePositions()
 
 // Checks for a scroll event.
 function onScroll() {
@@ -538,13 +546,15 @@ function updatePositions() {
   }
 }
 
-// runs updatePositions on scroll
+// Runs updatePositions() on scroll
 window.addEventListener('scroll', onScroll);
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
+
+  // Relocated from inside the for loop below
   var movingPizzas = document.querySelector("#movingPizzas1");
 
   for (var i = 0; i < 32; i++) {
