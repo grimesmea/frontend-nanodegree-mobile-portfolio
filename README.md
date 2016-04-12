@@ -5,7 +5,7 @@ Most optimizations to this project were achieved using Gulp (http://gulpjs.com/)
 
 Changes to views/js/mains.js to improve FPS and reduce jank on the  http://grimesmea.github.io/frontend-nanodegree-mobile-portfolio/dist/views/pizza page are explained within the comments of main.js.
 
-Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/.This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:  
+Source code can be found at https://github.com/grimesmea/frontend-nanodegree-mobile-portfolio/. This code can be downloaded and built (in the same manner as those project files currently available in the /dist folder) following these steps:  
 1) Install Node (http://nodejs.org) and Gulp (http://gulpjs.com/)  
 2) Install dependencies using npm install - dependencies needed can be seen in
 the package.json file.  
